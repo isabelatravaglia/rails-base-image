@@ -57,3 +57,5 @@ useradd -u $UID -g $USER -m $USER && \
 usermod -p "*" $USER && \
 usermod -aG sudo $USER && \
 echo "$USER ALL=NOPASSWD: ALL" >> /etc/sudoers.d/50-$USER
+
+USER $USER
